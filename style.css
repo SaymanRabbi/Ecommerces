@@ -1,0 +1,209 @@
+    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --main-bg-color: #2874f0;
+    }
+    /* HEader */
+    
+    header {
+        /* display: flex; */
+        background: var(--main-bg-color);
+    }
+    
+    nav {
+        display: flex;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .logo img {
+        width: 10vw;
+        padding: 0px 70px;
+    }
+    
+    nav ul {
+        display: flex;
+        height: 70px;
+        /* justify-content: flex-start; */
+        align-items: center;
+        /* width: 24VW; */
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Itim', sans-serif;
+        font-size: 18px;
+    }
+    
+    header nav ul li {
+        list-style: none;
+        padding: 0 15px;
+    }
+    
+    .serch {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .serch input {
+        outline: none;
+    }
+    
+    .serch .type {
+        width: 25vw;
+        padding: 6px 11px;
+        border-radius: 2px;
+        margin: 0 9px 0 40px;
+        font-family: 'Itim', sans-serif;
+        /* color: black; */
+        /* position: absolute; */
+        /* cursor: pointer; */
+    }
+    
+    .btn {
+        width: 58px;
+        height: 29px;
+        text-transform: uppercase;
+        font-family: 'Itim', sans-serif;
+        position: absolute;
+        right: 2%;
+        cursor: pointer;
+    }
+    
+    .btn :hover {
+        background: white;
+    }
+    
+    .login {
+        display: flex;
+        align-items: center;
+        /* width: 267px; */
+        justify-content: center;
+    }
+    
+    .login .left {
+        margin: 0 20px;
+        padding: 5px 20px;
+        border-radius: 9px;
+        font-family: 'Itim', sans-serif;
+        cursor: pointer;
+        /* outline: var(--main-bg-color); */
+    }
+    
+    .login .right {
+        padding: 5px 20px;
+        border-radius: 9px;
+        font-family: 'Itim', sans-serif;
+        cursor: pointer;
+        /* outline: var(--main-bg-color); */
+    }
+    /* main */
+    /* main {
+    background: gray;
+} */
+    
+    .container {
+        min-height: calc(100vh - 70px - 12vh);
+        /* background: gray; */
+    }
+    
+    .progressbar {
+        height: 3px;
+        background: blue;
+        animation: sayman 1s ease-in-out 2s;
+    }
+    
+    @keyframes sayman {
+        0% {
+            width: 0;
+            background: red;
+        }
+        50% {
+            width: 50vw;
+        }
+        100% {
+            width: 90vw;
+            background: yellow;
+        }
+    }
+    
+    .Enroll {
+        margin: 20px 0;
+        color: var(--main-bg-color);
+        padding: 0 150px;
+        font-family: 'Itim', sans-serif;
+    }
+    
+    .buy {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        /* width: 100vh; */
+        justify-content: space-between;
+        max-width: 100vw;
+    }
+    
+    .buy button {
+        height: 31px;
+        width: 86px;
+        margin-right: 13%;
+        font-family: 'Itim', sans-serif;
+        cursor: pointer;
+    }
+    
+    .cards-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sources {
+        margin: 10px 20px;
+        /* display: flex; */
+    }
+    
+    .sources .lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sources .lines a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Itim', sans-serif;
+        color: var(--main-bg-color);
+    }
+    
+    .sources .lines p {
+        text-transform: uppercase;
+        padding: 5px 0 2px 0;
+    }
+    
+    .slider {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    /* End main Container */
+    /* Footer Style */
+    
+    .Foot {
+        display: flex;
+        height: 12vh;
+        background: var(--main-bg-color);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Itim', sans-serif;
+    }
